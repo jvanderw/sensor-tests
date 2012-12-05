@@ -1,0 +1,14 @@
+Copyright (c) 2012 Jess VanDerwalker
+
+SensorTests
+
+* Overview
+
+SensorTests is a basic Android application developed in Eclipse to
+gain some experience in the handling different sensors.
+
+* Licensing
+This code is licensed under the Apache License, Version 2.0. Please
+see the LICENSE file in this directory or:
+
+http://www.apache.org/licenses/LICENSE-2.0
