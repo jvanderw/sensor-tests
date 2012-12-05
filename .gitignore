@@ -1,0 +1,9 @@
+SensorTests/bin
+SensorTests/gen
+SensorTests/.settings
+SensorTests/.classpath
+SensorTests/.project
+
+*~
+*#*
+SensorTests/lint.xml

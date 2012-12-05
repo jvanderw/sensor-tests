@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".EnvironmentalActivity"
+            android:name="org.vanderwalker.sensortests.AtmPressureFragment"
             android:label="@string/title_activity_environmental" >
         </activity>
     </application>

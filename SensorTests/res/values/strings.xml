@@ -13,7 +13,7 @@
     <string name="title_activity_environmental">Environmental</string>
     <string name="enviro_ambient_temp">Ambient Temp.:</string>
     <string name="enviro_relative_hum">Relative Humidity:</string>
-    <string name="enviro_atm_pressure">Atmospheric Pressure:</string>
+    <string name="atm_pressure_title">Atmospheric Pressure</string>
     <string name="calibrate_dialog_info">To calibrate the linear accelerometer, please place the device on a flat level surface and press the "Calibrate" button.</string>
     <string name="calibrate_dialog_button">Calibrate</string>
     <string name="accel_calibrate_button">Calibrate accelerometer</string>

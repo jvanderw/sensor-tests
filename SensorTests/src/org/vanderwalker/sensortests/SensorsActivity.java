@@ -37,9 +37,9 @@ public class SensorsActivity extends FragmentActivity {
 		Log.d(TAG, "startAccelActivity");
 	}
 	
-	// Start the EnvironmentalActivity - handler hooked to button in view
+	// Start the AtmPressureFragment - handler hooked to button in view
 	public void startEnvironmentalActivity(View view) {
-		Intent intent = new Intent(this, EnvironmentalActivity.class);
+		Intent intent = new Intent(this, AtmPressureFragment.class);
 		startActivity(intent);
 		Log.d(TAG, "startEnvironmentalActivity");
 	}

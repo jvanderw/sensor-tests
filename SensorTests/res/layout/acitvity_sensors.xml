@@ -13,14 +13,22 @@
         android:layout_weight="1"
         tools:layout="@layout/fragment_gravity" />
 
-        <fragment
+    <fragment
         android:id="@+id/linear_accel_fragment"
         android:name="org.vanderwalker.sensortests.LinearAccelFragment"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_weight="1"
         tools:layout="@layout/fragment_linear_accel" />
-   
+
+    <fragment
+        android:id="@+id/atm_pressure_fragment"
+        android:name="org.vanderwalker.sensortests.AtmPressureFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:layout="@layout/fragment_atm_pressure" />
+
     <Button
         android:id="@+id/button3"
         android:layout_width="match_parent"
