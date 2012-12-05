@@ -1,31 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/app_name"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <fragment
+        android:id="@+id/gravity_fragment"
+        android:name="org.vanderwalker.sensortests.GravityFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:layout="@layout/fragment_gravity" />
 
-    <Button
-        android:id="@+id/buttonAccel"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/sensors_accel_button"
-        android:onClick="startAccelActivity" />
-
-    <Button
-        android:id="@+id/buttonWeather"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/sensors_environmental_button"
-        android:onClick="startEnvironmentalActivity" />
-
+        <fragment
+        android:id="@+id/linear_accel_fragment"
+        android:name="org.vanderwalker.sensortests.LinearAccelFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:layout="@layout/fragment_linear_accel" />
+   
     <Button
         android:id="@+id/button3"
         android:layout_width="match_parent"

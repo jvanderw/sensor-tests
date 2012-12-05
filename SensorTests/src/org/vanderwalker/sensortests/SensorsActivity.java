@@ -1,13 +1,13 @@
 package org.vanderwalker.sensortests;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 
-public class SensorsActivity extends Activity {
+public class SensorsActivity extends FragmentActivity {
 
 	private static final String TAG = "SensorsActivity";
 	
@@ -30,9 +30,9 @@ public class SensorsActivity extends Activity {
 		super.onDestroy();
 	}
 	
-	// Start the AccelActivity - handler hooked to button in view
+	// Start the LinearAccelFragment - handler hooked to button in view
 	public void startAccelActivity(View view) {
-		Intent intent = new Intent(this, AccelActivity.class);
+		Intent intent = new Intent(this, LinearAccelFragment.class);
 		startActivity(intent);
 		Log.d(TAG, "startAccelActivity");
 	}

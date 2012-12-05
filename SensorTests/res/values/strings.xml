@@ -2,16 +2,14 @@
 
     <string name="app_name">Sensor Tests</string>
     <string name="menu_settings">Settings</string>
-    <string name="title_activity_gravity">Acceleration</string>
-    <string name="gravity_x_axis">x-axis:</string>
-    <string name="gravity_y_axis">y-axis:</string>
-    <string name="gravity_z_axis">z-axis:</string>
-    <string name="gravity_zero">0</string>
+    <string name="x_axis">x-axis:</string>
+    <string name="y_axis">y-axis:</string>
+    <string name="z_axis">z-axis:</string>
+    <string name="zero">0</string>
     <string name="gravity">Gravity</string>
-    <string name="accel">Acceleration</string>
+    <string name="linear_accel">Linear Acceleration</string>
     <string name="sensors_accel_button">Acceleration</string>
     <string name="sensors_environmental_button">Environmental</string>
-    <string name="hello_world">Hello world!</string>
     <string name="title_activity_environmental">Environmental</string>
     <string name="enviro_ambient_temp">Ambient Temp.:</string>
     <string name="enviro_relative_hum">Relative Humidity:</string>

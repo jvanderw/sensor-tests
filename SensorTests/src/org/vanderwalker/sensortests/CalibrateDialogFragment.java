@@ -12,8 +12,7 @@ import android.widget.Button;
 public class CalibrateDialogFragment extends DialogFragment implements OnClickListener {
 
     private static final String TAG = "CalibrateDialogFragment";
-    
-    private Button calibrateButton;
+    private int fragmentId;
     
     public interface CalibrateDialogListener {
         void onFinishCalibrateDialog();
@@ -21,13 +20,21 @@ public class CalibrateDialogFragment extends DialogFragment implements OnClickLi
     
     public CalibrateDialogFragment() {
     }
+    
+    /**
+     * Create a new calibration dialog.
+     * @param id ID of the fragment that is creating this dialog
+     */
+    public CalibrateDialogFragment(int id) {
+        fragmentId = id;
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
         
         View view = inflater.inflate(R.layout.fragment_calibrate_dialog, container);
-        calibrateButton = (Button) view.findViewById(R.id.buttonCalibrate);
+        Button calibrateButton = (Button) view.findViewById(R.id.buttonCalibrate);
         calibrateButton.setOnClickListener(this);
         getDialog().setTitle(R.string.calibrate_dialog_title);
         
@@ -38,7 +45,7 @@ public class CalibrateDialogFragment extends DialogFragment implements OnClickLi
 
     public void onClick(View view) {
         Log.d(TAG, "onClick");
-        CalibrateDialogListener dl = (CalibrateDialogListener) getActivity();
+        CalibrateDialogListener dl = (CalibrateDialogListener) getFragmentManager().findFragmentById(fragmentId);
         dl.onFinishCalibrateDialog();
         this.dismiss();
     }
