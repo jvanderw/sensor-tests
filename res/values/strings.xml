@@ -5,7 +5,7 @@
     <string name="x_axis">x-axis:</string>
     <string name="y_axis">y-axis:</string>
     <string name="z_axis">z-axis:</string>
-    <string name="zero">0</string>
+    <string name="zero">0.00</string>
     <string name="gravity">Gravity</string>
     <string name="linear_accel">Linear Acceleration</string>
     <string name="sensors_accel_button">Acceleration</string>
